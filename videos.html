@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    background: var(--color-main);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+:root {
+  --color-bg: #f3f4f6;            /* Soft light gray background */
+  --color-surface: #e5eaf2;       /* Pale muted blue-gray */
+  --color-base: #006aff;          /* Light slate/steel base */
+  --color-black: #000000;       
+  
+  
+  --color-primary: #55667c;       /* Muted, dusty blue-gray */
+  --color-primary-hover: #445266; /* Deeper variation on hover */
+  --color-accent: #6b7b91;        /* Cool slate with elegance */
+  
+  --color-main: #0c1015;     /* Deep navy-charcoal for main text */
+  --color-text-muted: #64748b;    /* Subtle slate tone for muted UI text */
+  --color-border: #d0d7e2;        /* Very light blue-gray for clean dividers */
+
+  --color-button: #445266;
+  --color-button-hover: #2e3a4b;
+
+  --color-success: #3c8577;
+  --color-warning: #c0841a;
+  --color-error: #b91c1c;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--color-main);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar .right {
+  margin-left: auto; /* pushes button to the right */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
+
+/* Active Page Highlight */
+.navbar a.active {
+    border-bottom: 3px solid var(--color-base);
+ 
+}
+
+/* Back to Portfolio Button */
+.back-btn {
+  color: var(--color-bg);
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+.video-grid {
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.video-item video {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+h1 {
+    border-bottom: solid 3px var(--color-base);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar">
+  <ul>
+    <li class="right"><a href="index.html" class="back-btn">←Back</a></li>
+    <li><a href="images.html" class="nav-link">Images</a></li>
+    <li><a href="websites.html" class="nav-link">Websites</a></li>
+    <li><a href="videos.html" class="nav-link active">Videos</a></li>
+  </ul>
+</nav>
+
+<h1>Video Projects</h1>
+<div class="video-grid">
+    <div class="video-item"><video controls poster="images\Screenshot 2025-08-12 004339.png"><source src="videos\0708(2) - Copy.mp4" type="video/mp4"></video></div>
+    <div class="video-item"><video controls poster="images\Screenshot 2025-08-12 004221.png"><source src="videos\copy_7A79A143-A61E-4C5F-B007-9F78AE38803B.mov" type="video/mp4"></video></div>
+    <div class="video-item"><video controls poster="images\Screenshot 2025-08-12 004246.png"><source src="videos\designs funny reel - Copy.mp4" type="video/mp4"></video></div>
+    <div class="video-item"><video controls poster="images\Screenshot 2025-08-26 160843.png"><source src="images\copy_AC873A31-260C-4150-B1AA-345EEA4FD071.mov" type="video/mp4"></video></div>
+    <div class="video-item"><video controls poster="images\Screenshot 2025-08-26 161136.png"><source src="images\rollings.mp4" type="video/mp4"></video></div>
+    <div class="video-item"><video controls poster="images\Screenshot 2025-08-26 161451.png"><source src="images\copy_7BDC87A4-FA93-47A2-AA39-DC9DDE2EFAA4.mov" type="video/mp4"></video></div>
+    <div class="video-item"><video controls poster="images\Screenshot 2025-08-26 161437.png"><source src="images\copy_CB4F8D6F-9E49-4AEC-B9FD-1A9993C306CF-2.mov" type="video/mp4"></video></div>
+</div>
+
+</body>
+</html>

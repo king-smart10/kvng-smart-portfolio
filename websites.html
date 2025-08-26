@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Websites Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    background: var(--color-main);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+:root {
+  --color-bg: #f3f4f6;            /* Soft light gray background */
+  --color-surface: #e5eaf2;       /* Pale muted blue-gray */
+  --color-base: #006aff;          /* Light slate/steel base */
+  --color-black: #000000;       
+  
+  
+  --color-primary: #55667c;       /* Muted, dusty blue-gray */
+  --color-primary-hover: #445266; /* Deeper variation on hover */
+  --color-accent: #6b7b91;        /* Cool slate with elegance */
+  
+  --color-main: #0c1015;     /* Deep navy-charcoal for main text */
+  --color-text-muted: #64748b;    /* Subtle slate tone for muted UI text */
+  --color-border: #d0d7e2;        /* Very light blue-gray for clean dividers */
+
+  --color-button: #445266;
+  --color-button-hover: #2e3a4b;
+
+  --color-success: #3c8577;
+  --color-warning: #c0841a;
+  --color-error: #b91c1c;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--color-main);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar .right {
+  margin-left: auto; /* pushes button to the right */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
+
+/* Active Page Highlight */
+.navbar a.active {
+    border-bottom: 3px solid var(--color-base);
+ 
+}
+
+/* Back to Portfolio Button */
+.back-btn {
+  color: var(--color-bg);
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+.website-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.website-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.website-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.website-item:hover img {
+    transform: scale(1.05);
+}
+
+.website-item a {
+    text-decoration: none;
+}
+
+h1 {
+    border-bottom: solid 3px var(--color-base);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar">
+  <ul>
+    <li class="right"><a href="index.html" class="back-btn">←Back</a></li>
+    <li><a href="images.html" class="nav-link">Images</a></li>
+    <li><a href="websites.html" class="nav-link active">Websites</a></li>
+    <li><a href="videos.html" class="nav-link">Videos</a></li>
+  </ul>
+</nav>
+
+<h1>Website Projects</h1>
+<div class="website-grid">
+    <div class="website-item"><a href="https://king-smart10.github.io/smart-portfolio/" target="_blank"><img src="images\Screenshot 2025-08-26 153830.png" alt=""></a></div>
+    <div class="website-item"><a href="https://king-smart10.github.io/skylight/" target="_blank"><img src="images\Screenshot 2025-08-11 235721.png" alt=""></a></div>
+    <div class="website-item"><a href="https://ptgm.page.gd/" target="_blank"><img src="images\Screenshot 2025-08-26 154149.png" alt=""></a></div>
+</div>
+
+</body>
+</html>

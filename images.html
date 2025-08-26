@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography Gallery</title>
+<link rel="stylesheet" href="style.css"> <!-- Your main CSS -->
+<style>
+body {
+    background: var(--color-main);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+:root {
+  --color-bg: #f3f4f6;            /* Soft light gray background */
+  --color-surface: #e5eaf2;       /* Pale muted blue-gray */
+  --color-base: #006aff;          /* Light slate/steel base */
+  --color-black: #000000;       
+  
+  
+  --color-primary: #55667c;       /* Muted, dusty blue-gray */
+  --color-primary-hover: #445266; /* Deeper variation on hover */
+  --color-accent: #6b7b91;        /* Cool slate with elegance */
+  
+  --color-main: #0c1015;     /* Deep navy-charcoal for main text */
+  --color-text-muted: #64748b;    /* Subtle slate tone for muted UI text */
+  --color-border: #d0d7e2;        /* Very light blue-gray for clean dividers */
+
+  --color-button: #445266;
+  --color-button-hover: #2e3a4b;
+
+  --color-success: #3c8577;
+  --color-warning: #c0841a;
+  --color-error: #b91c1c;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--color-main);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar .right {
+  margin-left: auto; /* pushes button to the right */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
+
+/* Active Page Highlight */
+.navbar a.active {
+    border-bottom: 3px solid var(--color-base);
+ 
+}
+
+/* Back to Portfolio Button */
+.back-btn {
+  color: var(--color-bg);
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    border-bottom: solid 3px var(--color-base);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar">
+  <ul>
+    <li class="right"><a href="index.html" class="back-btn">←Back</a></li>
+    <li><a href="images.html" class="nav-link active">Images</a></li>
+    <li><a href="websites.html" class="nav-link">Websites</a></li>
+    <li><a href="videos.html" class="nav-link">Videos</a></li>
+  </ul>
+</nav>
+
+<h1>Photography Gallery</h1>
+<div class="gallery-grid">
+    <img src="images/_MG_0788.jpg" alt="">
+    <img src="images/_MG_0506.jpg" alt="">
+    <img src="images/_MG_0711.jpg" alt="">
+    <img src="images\6FC9F011-C9F0-443D-A260-4CF80F570418.jpg" alt="">
+    <img src="images\IMG_8612.jpg" alt="">
+    <img src="images\_MG_1166.JPG" alt="">
+    <img src="images\_MG_1205.JPG" alt="">
+    <img src="images\IMG_5216-2.png" alt="">
+    <img src="images\IMG_3062.JPG" alt="">
+    <img src="images\IMG_8400.jpg" alt="">
+    <img src="images\IMG_8407_jpg.jpg" alt="">
+    <img src="images\_MG_0730-2.jpg" alt="">
+    <img src="images\_MG_0732-2.jpg" alt="">
+</div>
+
+</body>
+</html>
