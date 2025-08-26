@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Email settings
-    $to      = "your-email@gmail.com"; // Your Gmail
+    $to      = "smartledum2@gmail.com"; // Your Gmail
     $subject = "New Contact Form Message from $name";
     $body    = "Name: $name\nEmail: $email\nMessage:\n$message";
     $headers = "From: $email";
