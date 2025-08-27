@@ -1,0 +1,9 @@
+# Ignore huge raw media files (over 100MB)
+*.mov
+*.mp4
+*.avi
+*.zip
+
+# But still keep images/videos tracked
+!images/**
+!videos/**
